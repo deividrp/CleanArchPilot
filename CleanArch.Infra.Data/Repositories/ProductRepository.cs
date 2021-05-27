@@ -18,6 +18,10 @@ namespace CleanArch.Infra.Data.Repositories
             _context = context;
         }
 
+        /// <summary>
+        /// Repositório para produtos
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<Product> GetProducts()
         {
             return _context.Products;
